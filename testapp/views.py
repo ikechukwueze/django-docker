@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home_page_view(request):
-    return HttpResponse('Docker is up and running.')
+    return HttpResponse('Docker is up and running')
