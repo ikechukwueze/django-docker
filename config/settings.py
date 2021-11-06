@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'testapp',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -83,6 +85,20 @@ DATABASES = {
         'PORT': 5432
     }
 }
+
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+"""
+
+
+
+# New auth user model
+AUTH_USER_MODEL = 'accounts.UserAccount'
 
 
 # Password validation
